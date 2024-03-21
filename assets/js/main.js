@@ -21,3 +21,16 @@ document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loader');
     loadNow(1);
 });
+
+
+
+// scroll up "pop up"
+let offset = 0;
+window.addEventListener("scroll", function () {
+  let st = window.pageYOffset;
+  if (st > offset) {
+    document.querySelector(".fa-arrow-up").classList.add("active");
+  } else {
+    document.querySelector(".fa-arrow-up").classList.remove("active");
+  }
+});
