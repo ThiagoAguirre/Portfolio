@@ -9,7 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@1,900&display=swap"
     rel="stylesheet">
-
+  <!-- Box Icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Thiago Aguirre</title>
   <link rel="stylesheet" href="./assets/css/main.css">
@@ -19,25 +19,29 @@
   <!--?======================== Loader and Scroll Start ========================= -->
   <div id="loader"></div>
 
-  <a href="#home" aria-label="ScrollTop" class="fa-arrow-up" id="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+  <a href="#home" aria-label="scroll-top" class="arrowUp" id="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
   <!--?======================== Loader and Scroll end ========================= -->
 
   <!-- ==================== navbar Start ========================== -->
-  <nav id="navbar">
-    <a href="/" class="logo">
-      <img src="./assets/img/logo/logo.png" alt="logo" style="width: 40px; height: 40px">
-      <h4>&lt; Thiago Aguirre &#92 &gt;</h4>
-    </a>
-
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav id="navbar">
+      <a href="#home" class="logo">
+        <h1>&lt; Thiago Aguirre &#92 &gt;</h1>
+      </a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Project</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </nav>
+  </header>
   <!-- ==================== navbar End ========================== -->
 
   <!-- ==================== Main Start ========================== -->
@@ -45,10 +49,11 @@
     <div id="particles-js"></div>
     <div class="home-content">
       <h1>Hello, I'm <br> Thiago Aguirre</h1>
-      <h3>Full Stack Developer</h3>
+
+      <span id="text"></span><span id="cursor"></span>
       <div class="btn-box">
         <a href="./assets/download/Portfolio_thiago_aguirre.pdf" download>Dowload CV</a>
-        <a href="#contact">Let's Talk</a>
+        <a href="mailto:thiago.aguirre08@outlook.com" target="_blank">Let's Talk</a>
       </div>
       <div class="home-csi">
         <a href="https://www.linkedin.com/in/thiago-oliveira-aguirre-640a21209/" target="_blank"><i
@@ -109,19 +114,19 @@
         </div>
         <div data-tilt class="bar">
           <div class="info">
-            <img src="assets/img/logo/react.png" alt="MongoDb">
+            <img src="./assets/img/logo/react.png" alt="MongoDb">
             <span>React</span>
           </div>
         </div>
         <div data-tilt class="bar">
           <div class="info">
-            <img src="assets/img/logo/Bootstrap.png" alt="MongoDb">
+            <img src="./assets/img/logo/Bootstrap.png" alt="MongoDb">
             <span>Bootstrap</span>
           </div>
         </div>
         <div data-tilt class="bar">
           <div class="info">
-            <img src="assets/img/logo/Mongo.png" alt="MongoDb">
+            <img src="./assets/img/logo/Mongo.png" alt="MongoDb">
             <span>MongoDB</span>
           </div>
         </div>
@@ -133,19 +138,19 @@
         </div>
         <div data-tilt class="bar">
           <div class="info">
-            <img src="/assets/img/logo/python.png" alt="python" />
+            <img src="./assets/img/logo/python.png" alt="python" />
             <span>python</span>
           </div>
         </div>
         <div data-tilt class="bar">
           <div class="info">
-            <img src="/assets/img/logo/nodejs.png" alt="Node.Js" />
+            <img src="./assets/img/logo/nodejs.png" alt="Node.Js" />
             <span>Node.JS</span>
           </div>
         </div>
         <div data-tilt class="bar">
           <div class="info">
-            <img src="assets/img/logo/github.png" alt="github">
+            <img src="./assets/img/logo/github.png" alt="github">
             <span>GitHub</span>
           </div>
         </div>
@@ -160,47 +165,51 @@
 
     <div class="serv-container">
       <div class="row" id="skillsContainer">
-        <div data-tilt class="bar">
+
+        <div data-tilt class="box-serv">
           <div class="info">
             <img src="./assets/img/logo/computerCode.png" alt="html" />
             <h4>Web Development</h4>
             <p>Developing responsible Web applications with the newest features and technologies</p>
           </div>
         </div>
-        <div data-tilt class="bar">
+
+        <div data-tilt class="box-serv">
           <div class="info">
             <img src="./assets/img/logo/backend.png" alt="css" />
             <h4>Back-end Development</h4>
             <p>Developing applications and REST/GraphQl API's</p>
           </div>
         </div>
-        <div data-tilt class="bar">
+
+        <div data-tilt class="box-serv">
           <div class="info">
-            <img src="assets/img/logo/cloud.png" alt="cloud">
+            <img src="./assets/img/logo/cloud.png" alt="cloud">
             <h4>Data Management</h4>
             <p>Data manipulation for Relational and Non-Relational Databases (MongoDB) or PostgresSQL</p>
           </div>
         </div>
+
       </div>
     </div>
 
   </section>
+
   <!-- ==================== Services End ========================== -->
 
   <!-- ==================== Project Start ========================== -->
-  <section class="project" id="project">
+  <section class="projects" id="projects">
     <h2 class="heading"> Projects </h2>
     <div class="box-container">
 
       <div class="box">
-        <img draggable="false" src="/assets/img/project/WorkinProgress.png" alt="#" />
+        <img src="./assets/img/project/WorkinProgress.png" alt="#" />
         <div class="content">
           <div class="tag">
             <h3>IM PROGRESS</h3>
           </div>
           <div class="desc">
-            <p>IM PROGRESS</p>
-            <p>Build with: <i class="fab fa-node-js"></i></p>
+            <p>Build with:</p>
             <div class="btns">
               <a href="#" class="btn view" target="_blank">
                 View</a>
@@ -212,13 +221,12 @@
 
 
       <div class="box">
-        <img draggable="false" src="/assets/img/project/WorkinProgress.png" alt="#" />
+        <img src="./assets/img/project/WorkinProgress.png" alt="#" />
         <div class="content">
           <div class="tag">
-            <h3>IM PROGRESS</h3>
+            <h3>Clothing sales website</h3>
           </div>
           <div class="desc">
-            <p>IM PROGRESS</p>
             <p>Build with:</p>
             <div class="btns">
               <a href="#" class="btn view" target="_blank"></i>
@@ -231,15 +239,13 @@
 
 
       <div class="box">
-        <img draggable="false" src="/assets/img/project/WorkinProgress.png" alt="#" />
+        <img src="./assets/img/project/WorkinProgress.png" alt="#" />
         <div class="content">
-          <div class="tag">
+          <div class="name">
             <h3>IM PROGRESS</h3>
           </div>
           <div class="desc">
-            <p>IM PROGRESS</p>
-            <p>Build with: <i class="fab fa-html5"></i>, <i class="fab fa-css3-alt"></i>, <i
-                class="fab fa-js-square"></i></p>
+            <p>Build with:</p>
             <div class="btns">
               <a href="#" class="btn view" target="_blank"></i>
                 View</a>
@@ -251,18 +257,6 @@
     </div>
   </section>
   <!-- ==================== Project End ========================== -->
-  <!-- ==================== Contact Start ========================== -->
-  <section class="contact py-5" id="contato">
-
-    <form action="https://formsubmit.co/thiago.aguirre08@outlook.com.X-UA-Compatible" method="POST">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" placeholder="Discription" cols="30" rows="10"></textarea>
-      <input type="email" name="email" placeholder="email"required>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-  <!-- ==================== Contact End ========================== -->
 
   <!-- ==================== footer Start ========================== -->
   <footer class="footer">
@@ -291,12 +285,10 @@
       </div>
     </div>
     <!-- ==================== Footer End ========================== -->
-
-    <script src="./assets/js/scroll.js"></script>
+    <script src="assets/js/textAnimation.js"></script>
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/main.js"></script>
-    s
 </body>
 
 </html>

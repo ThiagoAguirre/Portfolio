@@ -12,9 +12,7 @@ function loadNow(opacity) {
 }
 
 function displayContent() {
-    
     document.getElementById('loader').style.display = 'none';
-    document.getElementById('content').style.display = 'block';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -24,13 +22,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// scroll up "pop up"
-let offset = 0;
+// The animation of scroll up  "pop up"
+let offSet = 0;
 window.addEventListener("scroll", function () {
   let st = window.pageYOffset;
-  if (st > offset) {
-    document.querySelector(".fa-arrow-up").classList.add("active");
+  if (st > offSet) {
+    document.querySelector(".arrowUp").classList.add("active");
   } else {
-    document.querySelector(".fa-arrow-up").classList.remove("active");
+    document.querySelector(".arrowUp").classList.remove("active");
   }
+});
+
+// script hamburger LINK in CSS youtube video
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
 });
